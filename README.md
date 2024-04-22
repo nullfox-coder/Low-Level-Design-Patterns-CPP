@@ -33,13 +33,15 @@ Macros can be classified into four types in C++:
 ### Multiline Macros
 // Define a macro for printing a rectangle with a given 
 // width and height 
-    ```#define PRINT_RECTANGLE(width,  height)                     \ 
-        for (int i = 0; i < height; i++) {                     \ 
-        for (int j = 0; j < width; j++) {                  \ 
-        std::cout << "*";                              \ 
-        }                                                  \ 
-        std::cout << std::endl;                            \ 
-        } ```
+```
+#define PRINT_RECTANGLE(width,  height)
+    for (int i = 0; i < height; i++) {      
+        for (int j = 0; j < width; j++) {      
+            std::cout << "*"; 
+        }                             
+        std::cout << std::endl;   
+    } 
+```
 
 ### Chain Macros
 //the parent macro will be expanded first and then the child macro will be expanded.
