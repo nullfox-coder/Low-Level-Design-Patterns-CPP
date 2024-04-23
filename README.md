@@ -23,16 +23,15 @@ macro_definition: It is the code that the preprocessor will substitute whenever 
 Macros can be classified into four types in C++:
 
 ### Object-Like Macros
-// Define a constant for the value of PI 
+Define a constant for the value of PI 
 ```#define PI 3.14159 ```
 
 ### Function-Like Macros
-// Define a macro to print a value 
+Define a macro to print a value 
 ```#define PRINT(x) cout << "Value is: " << x ```
 
 ### Multiline Macros
-// Define a macro for printing a rectangle with a given 
-// width and height 
+Define a macro for printing a rectangle with a given width and height 
 ```
 #define PRINT_RECTANGLE(width,  height)
     for (int i = 0; i < height; i++) {      
@@ -44,11 +43,11 @@ Macros can be classified into four types in C++:
 ```
 
 ### Chain Macros
-//the parent macro will be expanded first and then the child macro will be expanded.
-// defining first macro 
+the parent macro will be expanded first and then the child macro will be expanded.
+defining first macro 
     ```#define CLERK 10``` 
 
-// defining second macro 
+defining second macro 
     ```#define WORKER CLERK```
 
 ## Directives in C++
@@ -58,15 +57,15 @@ Macros can be classified into four types in C++:
 The #ifdef preprocessor directive in C++ is used to test whether a macro has been defined or not. The syntax of the #ifdef directive is as follows:
 
 ```#ifdef macro_name 
-// code to be compiled if macro_name is defined 
+Code to be compiled if macro_name is defined 
 #endif ```
 
 ### ifndef
 
 ```#ifndef macro_name_one
-// code to compile 
+Code to compile 
 #elif macro_name_two
-// code to compile 
+Code to compile 
 #endif
 ```
 
