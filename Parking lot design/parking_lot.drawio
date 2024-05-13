@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-05-13T11:05:59.651Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="kZ9ldBE3eGFR6b3eYOMN" version="24.4.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-05-13T18:46:52.402Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" etag="TgycGG9d5oxHbw1RtyyF" version="24.4.0" type="github">
   <diagram name="Page-1" id="cMbrWjMXnIb7fcWjsfxZ">
-    <mxGraphModel dx="2163" dy="1796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="5900" dy="3328" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -200,6 +200,75 @@
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="250" y="130" as="sourcePoint" />
             <mxPoint x="410" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="keUWMxr0N95nPIm7Rwf8-74" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ParkingLot&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- Instance: ParkingLot&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- parkingFloors: List&amp;lt;ParkingFloor&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- entryPanels: List&amp;lt;EntryPanel&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- exitPanels: List&amp;lt;ExitPanels&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getInstance() : ParkingLot&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getParkingFloorsList() : List&amp;lt;ParkingFloors&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getEntryPanels() : List&amp;lt;EntryPanels&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getExitPanels() : List&amp;lt;ExitPanels&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ vacateParkingSpot() : ParkingSpot&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="200" y="-510" width="340" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="keUWMxr0N95nPIm7Rwf8-75" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;entryX=0.465;entryY=1.005;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="keUWMxr0N95nPIm7Rwf8-74">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="360" y="-70" as="sourcePoint" />
+            <mxPoint x="350" y="-300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="keUWMxr0N95nPIm7Rwf8-76" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;EntryPanel&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- id: int&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getId(): int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getTicket(): ParkingTicket&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ generateParkingTicket(Vehicle,Parking FloorId, ParkingSpotID) : ParkingTicket&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-380" y="-540" width="450" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="keUWMxr0N95nPIm7Rwf8-77" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ExitPanel&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- id: int&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getId(): int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getTicket() : ParkingTicket&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ calculatePrice(Ticket) : float&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ processPayment() : boolean&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ checkPaymentStatus: boolean&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-320" y="-360" width="310" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="keUWMxr0N95nPIm7Rwf8-78" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;exitX=1.004;exitY=0.439;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="keUWMxr0N95nPIm7Rwf8-76" target="keUWMxr0N95nPIm7Rwf8-74">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="20" y="-420" as="sourcePoint" />
+            <mxPoint x="180" y="-420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="keUWMxr0N95nPIm7Rwf8-79" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ParkingTicket&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- id: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- parkingSpotId: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- parkingFloor: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- entryTime: TimeStamp&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- amount: float&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getter/setter&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-810" y="-420" width="270" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="keUWMxr0N95nPIm7Rwf8-80" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="keUWMxr0N95nPIm7Rwf8-77" target="keUWMxr0N95nPIm7Rwf8-74">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-180" y="-360" as="sourcePoint" />
+            <mxPoint x="-20" y="-360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="keUWMxr0N95nPIm7Rwf8-82" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="keUWMxr0N95nPIm7Rwf8-79" target="keUWMxr0N95nPIm7Rwf8-77">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-530" y="-240" as="sourcePoint" />
+            <mxPoint x="-370" y="-240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="keUWMxr0N95nPIm7Rwf8-83" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="keUWMxr0N95nPIm7Rwf8-79">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-540" y="-475.56" as="sourcePoint" />
+            <mxPoint x="-380" y="-475.56" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="keUWMxr0N95nPIm7Rwf8-84" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Payment&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- id: string&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- amount: float&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- paymentStatus: PaymentStatus&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getter/setter&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-810" y="-160" width="210" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="keUWMxr0N95nPIm7Rwf8-87" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=-0.004;exitY=0.596;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="keUWMxr0N95nPIm7Rwf8-77" target="keUWMxr0N95nPIm7Rwf8-84">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-400" y="-150" as="sourcePoint" />
+            <mxPoint x="-240" y="-150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="keUWMxr0N95nPIm7Rwf8-89" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;CardPayment&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field: Type&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method(): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-960" y="50" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="keUWMxr0N95nPIm7Rwf8-90" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;CashPayment&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field: Type&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method(): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-560" y="50" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="keUWMxr0N95nPIm7Rwf8-91" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.448;exitY=-0.026;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.021;entryY=0.818;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="keUWMxr0N95nPIm7Rwf8-89" target="keUWMxr0N95nPIm7Rwf8-84">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-670" y="10" as="sourcePoint" />
+            <mxPoint x="-510" y="10" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="keUWMxr0N95nPIm7Rwf8-92" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=1.013;entryY=0.91;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="keUWMxr0N95nPIm7Rwf8-84">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-490" y="40" as="sourcePoint" />
+            <mxPoint x="-510" y="10" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
