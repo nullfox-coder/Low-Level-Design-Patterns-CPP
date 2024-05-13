@@ -5,7 +5,7 @@ using namespace std;
 
 void user1Logs(){
     Logger* logger1 = Logger::getInstance();
-    logger1->Log("this is msg is from user 1");
+    logger1->Log("this msg is from user 1");
 }
 void user2Logs(){
     Logger* logger2 = Logger::getInstance();

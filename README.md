@@ -3,6 +3,11 @@
 
 # Prerequisite
 
+## UML Arrow type
+ ![alt text](https://i.stack.imgur.com/2ajCN.gif)
+
+ ## C++ learnings
+ 
 .cpp files: These are source files that contain the implementation of functions and classes. They are compiled by the C++ compiler and linked to create the final executable. .cpp files may include header files, but typically don't define any functions or classes that are meant to be used outside of that particular file.
 
 .hpp files: These are header files that contain function and class declarations. They are typically included in .cpp files using the #include directive. Header files are not compiled by themselves, but rather provide declarations that the compiler needs to properly compile the implementation in .cpp files.
